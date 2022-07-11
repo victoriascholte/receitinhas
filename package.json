@@ -1,0 +1,22 @@
+{
+  "name": "projeto-final-reprograma",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victoriascholte/projeto-final-reprograma.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victoriascholte/projeto-final-reprograma/issues"
+  },
+  "homepage": "https://github.com/victoriascholte/projeto-final-reprograma#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
