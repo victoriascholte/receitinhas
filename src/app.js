@@ -17,4 +17,4 @@ mongoose.connect()
 
 module.exports = app
 
-console.log("Estamos aqui...")
+console.log("Projeto Receitinhas")
