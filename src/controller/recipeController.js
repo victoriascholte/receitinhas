@@ -1,11 +1,40 @@
 const RecipeModel = require('../models/recipeModel')
 const SECRET = process.env.SECRET
 
-// nova Receita
-// const createRecipe 
+//// NOVA RECEITA
+
+const createRecipe = (req, res) => {
+    ;
+      const newRecipe = new recipeModel(req.body);
+      newRecipe.save((err) => {
+        if (err) {
+          return res.status(404).send({ message: err.message });
+        }
+        res.status(201).send({
+          message: "A receita foi cadastrada com sucesso!",
+        });
+      });
+      };
+
+
+//// TODAS AS RECEITAS 
+
+const allRecipes = (req, res) => {
+    recipeModel.find((err, recipe) => {
+      if (err) { 
+        return res.status(404).send({ message: err.message });
+      }
+      res.status(200).send(recipe);
+    });
+  };
+
+module.exports = {
+    createRecipe, allRecipes,
+}
+
 
 // listar Receitas
-// const findAllRecipes
+// const allRecipes
 
 // buscar por Id
 // findRecipeById
@@ -15,8 +44,3 @@ const SECRET = process.env.SECRET
 
 // deletar Receita
 // deleteRecipe
-
-
-// module.exports = {
-//     createRecipe, findAllRecipes, findRecipeById, updateRecipe, deleteRecipe
-// }
