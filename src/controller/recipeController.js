@@ -17,6 +17,6 @@ const SECRET = process.env.SECRET
 // deleteRecipe
 
 
-// module.exports = {
-
-// }
+module.exports = {
+  
+}
