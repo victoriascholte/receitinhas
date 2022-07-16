@@ -1,5 +1,5 @@
 {
-  "name": "projeto-final-reprograma",
+  "name": "receitinhas",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/victoriascholte/projeto-final-reprograma.git"
+    "url": "git+https://github.com/victoriascholte/receitinhas.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/victoriascholte/projeto-final-reprograma/issues"
+    "url": "https://github.com/victoriascholte/receitinhas/issues"
   },
-  "homepage": "https://github.com/victoriascholte/projeto-final-reprograma#readme",
+  "homepage": "https://github.com/victoriascholte/receitinhas#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
