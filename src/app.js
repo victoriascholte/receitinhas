@@ -10,8 +10,9 @@ const swaggerFile = require('../swagger/swagger_output.json');
 const app = express()
 app.use(express.json())
 app.use(cors())
+app.use('/documentation', swaggerUi.serve, swaggerUi.setup(swaggerFile))
 app.use('/', index)
-app.use('/documentation', swaggerUi.serve, swaggerUi.setup(swaggerFile));
+
 
 mongoose.connect()
 
