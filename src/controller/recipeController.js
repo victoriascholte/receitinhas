@@ -32,6 +32,16 @@ const createRecipe = async (req, res) => {
 //// TODAS AS RECEITAS 
 // const allRecipes 
 
+const allRecipes = async (req, res) => {
+    try {
+        const allRecipes = await RecipeModel.find()
+        res.status(200).json(allRecipes)
+    } catch (error) {
+        console.error(error)
+        res.status(500).json({ message: error.message })
+    }
+}
+
 //// BUSCAR POR ID
 // findRecipeById
 
@@ -43,8 +53,5 @@ const createRecipe = async (req, res) => {
 
 
 module.exports = {
-    createRecipe
+    createRecipe, allRecipes
 }
-
-
-
