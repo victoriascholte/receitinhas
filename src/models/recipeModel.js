@@ -19,11 +19,14 @@ const RecipesSchema = mongoose.Schema({
         type: [String],
         required: true
     },
+    categories: {
+        type: [String],
+        required: true
+    },
     preparation: {
         type: String,
         required: true,
     },
-
     age: {
         type: [String],
         required: true
