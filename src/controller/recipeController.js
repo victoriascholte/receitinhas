@@ -11,10 +11,10 @@ const SECRET = process.env.SECRET
 
 const createRecipe = async (req, res) => {
   try {
-      const { title, ingredients, preparation, age, category } = req.body
+      const { title, ingredients, preparation, age, categories } = req.body
       // preciso passar esse dado pra minha Model, para poder criar uma nova recipe model
       const newRecipe = new RecipeModel({
-          title, ingredients, preparation, age, category
+          title, ingredients, preparation, age, categories
       })
       // agora precisamos salvar a recipe no banco de dados
       // e deixar isso sincrono, para poder dar o feedback 
