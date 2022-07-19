@@ -43,15 +43,51 @@ const allRecipes = async (req, res) => {
 }
 
 //// BUSCAR POR ID
-// findRecipeById
+
+const findRecipeById = async (req, res) => {
+    try {
+        const findRecipe = await RecipeModel.findById(req.params.id)
+            if(findRecipe == null) {
+                return res.status(404).json({ message: 'Receita não encontrada.'})
+            }
+        res.status(200).json(findRecipe)
+    } catch (error) {
+        console.error(error)
+        res.status(500).json({ message: error.message})
+    }
+}
+
 
 // ATUALIZAR RECEITA
 // updateRecipe
 
+const updateRecipe = async (req, res) => {
+    try {
+        const { title, ingredients, preparation, age, category } = req.body
+        const updateRecipe = await RecipeModel.findByIdAndUpdate(req.params.id, {
+
+        })
+    } catch (error) {
+        console.error(error)
+        res.status(500).json({ message: error.message })
+    }
+}
+
 // DELETAR RECEITA
-// deleteRecipe
+
+const deleteRecipeById = async (req, res) => {
+    try {
+        const { id } = req.params 
+        await RecipeModel.findByIdAndDelete(id)
+        const message = `A receita ${deletedrecipe.name} foi deletada com sucesso!`
+        res.status(200).json({ message })
+    } catch (error) {
+        console.error(error)
+        res.status(500).json({ message: error.message })
+    }
+}
 
 
 module.exports = {
-    createRecipe, allRecipes
+    createRecipe, allRecipes, findRecipeById, updateRecipe, deleteRecipeById
 }

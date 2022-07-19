@@ -4,8 +4,8 @@ const router = express.Router()
 
 router.post("/recipes", controller.createRecipe)
 router.get("/recipes", controller.allRecipes)
-//router.get("/recipes/:id", controller.findById)
-//router.put("/recipes/:id", controller.update)
-//router.delete("/recipes/:id", controller.deleteById)
+router.get("/recipes/:id", controller.findRecipeById)
+router.put("/recipes/:id", controller.updateRecipe)
+router.delete("/recipes/:id", controller.deleteRecipeById)
 
 module.exports = router
