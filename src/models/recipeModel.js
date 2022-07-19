@@ -4,20 +4,31 @@ const mongoose = require('mongoose')
 // title: nome da receita; ingredients: lista de ingredientes; preparation: modo de preparo;
 // age: idades recomendadas; category: lista de categorias da receita;
 
-const recipesSchema = new mongoose.Schema({
+modules.export = recipes
+
+const RecipesSchema = mongoose.Schema({
     _id: {
         type: mongoose.Schema.Types.ObjectId,
         default: mongoose.Types.ObjectId
     },
-    title: { type: string },
-    ingredients: [{ type: string }],
-    preparation: { type: string },
-    age: [{ type: string }],
-    category: [{ type: string }],
-},{
-    versionKey: false,
-});
+    title: {
+        type: String,
+        required: true
+    },
+    ingredients: {
+        type: [String],
+        required: true
+    },
+    preparation: {
+        type: String,
+        required: true,
+    },
 
-const recipes = mongoose.model('recipes', recipesSchema);
+    age: {
+        type: [String],
+        required: true
+    },
+},{ timestamp: true })
 
-modules.export = recipes
+const Model = mongoose.model('recipe', RecipesSchema)
+module.exports = Model
