@@ -57,10 +57,11 @@ const findRecipeById = async (req, res) => {
 const updateRecipes = async (req, res) => {
     try {
         const { title, ingredients, preparation, age, categories } = req.body
-        const updatedRecipe = await recipeModel.findByIdAndUpdate(req.params.id, {
+        await recipeModel.findByIdAndUpdate(req.params.id, {
             title, ingredients, preparation, age, categories
         }) 
-        res.status(200).json(updatedRecipe)
+        const updatedRecipe = await recipeModel.findById(req.params.id)
+        res.status(200).json(updatedRecipe);
     } catch (error) {
         console.error(error)
         res.status(500).json({ message: error.message })
