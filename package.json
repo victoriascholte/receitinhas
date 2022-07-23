@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon server.js",
     "swagger-autogen": "node swagger.js",
-    "test": "jest"
+    "test": "jest --watchAll"
   },
   "repository": {
     "type": "git",
