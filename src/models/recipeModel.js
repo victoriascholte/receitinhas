@@ -26,7 +26,7 @@ const RecipesSchema = mongoose.Schema({
         required: true,
     },
     age: {
-        type: [String],
+        type: String,
         required: true
     },
 },{ timestamp: true })

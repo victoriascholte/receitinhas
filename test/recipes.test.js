@@ -22,6 +22,9 @@ describe("Model test", () => {
   it("Test preparation", () => {
     expect(recipe.preparation).toBe("15 min no forno");
   });
+  it("Test age", () => {
+    expect(recipe.age).toBe("A partir de 2 anos");
+  });
 //   it("New recipe in database", () => {
 //     recipe.save().then((dados) => {
 //       expect(dados.title).toBe(" ");
