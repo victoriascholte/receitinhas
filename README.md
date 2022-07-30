@@ -6,7 +6,7 @@ Projeto de conclusão do curso de Desenvolvimento Back-end - Todas em Tech \| On
 
 Este projeto é uma API REST de receitas saudáveis e acessíveis para bebês e crianças. É possível cadastrar receitas, editar, visualizar e deletar.
 
-Site  :desktop_computer:   |   [Backend](https://receitinhas.herokuapp.com/)  :woman_technologist:  |    [Documentação](https://receitinhas.herokuapp.com/documentation)   :page_facing_up:   |   [Apresentação](https://www.canva.com/design/DAFHPmLcpBM/Z6szgo6-SYJX6wCwxO3pew/view?utm_content=DAFHPmLcpBM&utm_campaign=designshare&utm_medium=link&utm_source=publishpresent)   :art:
+[Site](https://receitinhas-front.vercel.app) :desktop_computer: | [Backend](https://receitinhas.herokuapp.com/) :woman_technologist: | [Documentação](https://receitinhas.herokuapp.com/documentation) :page_facing_up: | [Apresentação](https://www.canva.com/design/DAFHPmLcpBM/Z6szgo6-SYJX6wCwxO3pew/view?utm_content=DAFHPmLcpBM&utm_campaign=designshare&utm_medium=link&utm_source=publishpresent) :art:
 
 ### O problema
 
