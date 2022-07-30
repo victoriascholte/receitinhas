@@ -5,7 +5,8 @@
 Projeto de conclusão do curso de Desenvolvimento Back-end - Todas em Tech \| On16 da [{reprograma}](https://www.reprograma.com.br/).
 
 Este projeto é uma API REST de receitas saudáveis e acessíveis para bebês e crianças. É possível cadastrar receitas, editar, visualizar e deletar.
- [Aplicação](https://receitinhas.herokuapp.com/) | [Documentação](https://receitinhas.herokuapp.com/documentation)  :page_facing_up: |  [Apresentação](https://www.canva.com/design/DAFHPmLcpBM/Z6szgo6-SYJX6wCwxO3pew/view?utm_content=DAFHPmLcpBM&utm_campaign=designshare&utm_medium=link&utm_source=publishpresent)  :desktop_computer: |
+
+Site  :desktop_computer:   |   [Backend](https://receitinhas.herokuapp.com/)  :woman_technologist:  |    [Documentação](https://receitinhas.herokuapp.com/documentation)   :page_facing_up:   |   [Apresentação](https://www.canva.com/design/DAFHPmLcpBM/Z6szgo6-SYJX6wCwxO3pew/view?utm_content=DAFHPmLcpBM&utm_campaign=designshare&utm_medium=link&utm_source=publishpresent)   :art:
 
 ### O problema
 
@@ -29,7 +30,7 @@ Mais de 9 milhões de crianças vivem em extrema pobreza no país, com provável
 
 ### A Solução
 
-##### Receitinhas é um livro de receitas online de alto valor nutritivo e baixo custo para crianças e bebês.
+Receitinhas é um livro de receitas online de alto valor nutritivo e baixo custo para crianças e bebês.
 
 ###### Informações de cada receita:
 
@@ -110,7 +111,7 @@ Postman | Heroku | Vercel
 express | cors | dotenv | mongoose | nodemon | jest | swagger-autogen | swagger-ui-express | save-dev
 
 Projeto criado por [Victoria Scholte](https://github.com/victoriascholte) com orientação da super prof. [Mayhhara F Lilian](https://github.com/mflilian)!  
-Agradecimentos especiais: André, por estar sempre comigo e me apoiando em tudo; Carol, Di, Maria e Cláudia, por cuidarem do Tito para eu poder estudar; Francisco, pela ajuda e paciência com o frontend, todas minhas colegas de turma, pela parceria essencial; professoras e equipe da {reprograma}, pelos ensinamentos e oportunidade.
+Agradecimentos especiais: André, por estar sempre comigo e me apoiando em tudo; Carol, Di, Maria e Cláudia, por cuidarem do Tito para eu poder estudar; Francisco, pela ajuda e paciência com o frontend; todas minhas colegas de turma, pela parceria; professoras e equipe da {reprograma}, pelos ensinamentos e oportunidade.
 
 <p align="center"><a href="https://github.com/victoriascholte/receitinhas/actions/workflows/ci.yaml"><img src="https://github.com/victoriascholte/receitinhas/actions/workflows/ci.yaml/badge.svg" alt="CI"></a>    
 <a href="https://codecov.io/gh/victoriascholte/receitinhas" ><img src="https://codecov.io/gh/victoriascholte/receitinhas/branch/main/graph/badge.svg?token=RNKLZ62E4J"/></a>

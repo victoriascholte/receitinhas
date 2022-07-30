@@ -17,10 +17,15 @@ const RecipesSchema = mongoose.Schema({
         type: [String],
         required: true
     },
-    categories: {
-        type: [String],
-        required: true
-    },
+    categories: [{
+        title: { 
+            type: String,
+            required: true 
+        },
+        color: { 
+            type: String,
+            required: true}
+    }],
     preparation: {
         type: String,
         required: true,
