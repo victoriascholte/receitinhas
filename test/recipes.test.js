@@ -5,7 +5,7 @@ describe("Model test", () => {
     id: " 5 ",
     title: "Bolo de Chocolate",
     ingredients: ["Farinha de Trigo"],
-    categories: ["Doces"],
+    // categories: ["Doces"],
     preparation: "15 min no forno",
     age: "A partir de 2 anos",
   });
@@ -16,9 +16,9 @@ describe("Model test", () => {
   it("Test ingredients", () => {
     expect(recipe.ingredients).toStrictEqual(["Farinha de Trigo"]);
   });
-  it("Test categories", () => {
-    expect(recipe.categories).toStrictEqual(["Doces"]);
-  });
+  // it("Test categories", () => {
+  //   expect(recipe.categories).toStrictEqual(["Doces"]);
+  // });
   it("Test preparation", () => {
     expect(recipe.preparation).toBe("15 min no forno");
   });
